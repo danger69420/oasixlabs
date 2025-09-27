@@ -14,15 +14,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --bg:#0b1020; --panel:#111827; --muted:#6b7280; --brand:#7c3aed; --accent:#22d3ee; --text:#e5e7eb; --ring: rgba(124, 58, 237, .35);
-    }
+    :root{--bg:#f6f7fb;--panel:#ffffff;--muted:#374151;--brand:#2563eb;--accent:#22c55e;--text:#111827;--ring:rgba(37,99,235,.35);} 
     *{box-sizing:border-box}
-    html,body{margin:0;height:100%;scroll-behavior:smooth}
+    html,body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg);} 
     body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--text); background: radial-gradient(1200px 800px at 80% -10%, rgba(124,58,237,.25), transparent 60%), radial-gradient(900px 700px at -10% 20%, rgba(34,211,238,.15), transparent 60%), var(--bg)}
     a{color:inherit;text-decoration:none}
     .container{max-width:1100px;margin:0 auto;padding:0 20px}
-    header{position:sticky;top:0;z-index:20;background:linear-gradient(180deg, rgba(11,16,32,.95), rgba(11,16,32,.65));backdrop-filter:saturate(1.2) blur(6px); border-bottom:1px solid rgba(255,255,255,.06)}
+    header{position:sticky;top:0;z-index:20;background:#ffffffcc;backdrop-filter:saturate(1.2) blur(6px); border-bottom:1px solid rgba(17,24,39,.08)}
     .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
     .logo{display:flex;gap:10px;align-items:center;font-weight:800;letter-spacing:.3px}
     .logo .mark{width:28px;height:28px;border-radius:8px;background: conic-gradient(from 200deg, var(--brand), var(--accent)); box-shadow:0 0 0 4px rgba(124,58,237,.12)}
@@ -41,13 +39,13 @@
     .grid{display:grid;gap:16px}
     @media(min-width:800px){.grid.cols-3{grid-template-columns:repeat(3,1fr)} .grid.cols-2{grid-template-columns:1fr 1fr}}
 
-    .card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:18px}
+    .card{background:#fff;border:1px solid rgba(17,24,39,.08);border-radius:14px;padding:18px;box-shadow:0 8px 24px rgba(17,24,39,.05);} 
     .tag{font-size:12px;color:#a5b4fc;border:1px solid rgba(165,180,252,.3);background:rgba(165,180,252,.08);border-radius:999px;padding:3px 8px;display:inline-block}
     .list{margin:10px 0 0;padding:0 0 0 18px;color:#d1d5db}
 
     .pricing{display:grid;gap:18px}
     @media(min-width:900px){.pricing{grid-template-columns:repeat(3,1fr)}}
-    .price{border-radius:16px;padding:22px;background:linear-gradient(180deg, rgba(124,58,237,.10), rgba(255,255,255,.03));border:1px solid rgba(124,58,237,.25)}
+    .price{border-radius:16px;padding:22px;background:#fff;border:1px solid rgba(37,99,235,.25);box-shadow:0 8px 24px rgba(37,99,235,.08);} 
     .price h3{margin:0 0 6px}
     .price .amt{font-size:36px;font-weight:800}
     .price small{color:var(--muted)}
@@ -96,11 +94,11 @@
 <main>
   <section class="hero">
     <div class="container">
-      <span class="badge">HSC • Years 7–12 • University bridging</span>
-      <h1>Personalised tutoring that compounds into results.</h1>
-      <p>Experienced tutor for Maths, English, Biology, Chemistry & Computing. Online Australia‑wide or in person around Quakers Hill. Diagnostic lesson → tailored plan → measurable progress.</p>
+      <span class="badge">Affordable tutoring • Years 7–12 • HSC</span>
+      <h1>Affordable, personalised tutoring for Maths, Chemistry & Biology.</h1>
+      <p>NSW HSC graduate (Advanced English & Advanced Maths) and UNSW Biotechnology student with a current Working With Children Check. Up‑to‑date with the syllabus. Online Australia‑wide or in person around Quakers Hill. 1:1 or small groups, with progress tracked and feedback after every session.</p>
       <div class="cta">
-        <a class="btn primary" href="#contact">Book a free 15‑min consult</a>
+        <a class="btn primary" href="#contact">Call +61&nbsp;413&nbsp;091&nbsp;559</a>
         <a class="btn" href="mailto:nadishchadha@gmail.com">nadishchadha@gmail.com</a>
       </div>
     </div>
@@ -112,39 +110,40 @@
       <div class="grid cols-3">
         <div class="card"><span class="tag">Mathematics</span>
           <ul class="list">
-            <li>Years 7–10, Standard & Advanced (HSC)</li>
+            <li>Year 7–10, HSC Standard & Advanced</li>
             <li>Algebra, functions, probability, statistics</li>
             <li>Exam strategies & calculator fluency</li>
           </ul>
         </div>
-        <div class="card"><span class="tag">English</span>
+        <div class="card"><span class="tag">Chemistry</span>
           <ul class="list">
-            <li>Standard & Advanced (analytical + discursive)</li>
-            <li>Craft of writing, paragraph structure, feedback</li>
+            <li>Year 11 & HSC core + depth studies</li>
+            <li>Data processing & uncertainty</li>
           </ul>
         </div>
-        <div class="card"><span class="tag">Science</span>
+        <div class="card"><span class="tag">Biology</span>
           <ul class="list">
-            <li>Biology & Chemistry (HSC core + depth studies)</li>
-            <li>Lab skills, data processing & uncertainty</li>
+            <li>Year 11 & HSC syllabus</li>
+            <li>Exam and project support</li>
           </ul>
         </div>
-        <div class="card"><span class="tag">Computing</span>
+        <div class="card"><span class="tag">Sessions</span>
           <ul class="list">
-            <li>Python & R essentials, data handling</li>
-            <li>Engineering computing & study skills</li>
+            <li>1:1 and 1:2 (paired) tutoring</li>
+            <li>Up to 3‑hour sessions</li>
+            <li>Online & face‑to‑face</li>
           </ul>
         </div>
-        <div class="card"><span class="tag">Diagnostics</span>
+        <div class="card"><span class="tag">Support</span>
           <ul class="list">
-            <li>Initial skills audit + goal setting</li>
-            <li>Personalised study plan within 48h</li>
+            <li>Homework, exams & projects</li>
+            <li>24/7 text support</li>
+            <li>Progress recorded & shared</li>
           </ul>
         </div>
-        <div class="card"><span class="tag">Assessments</span>
+        <div class="card"><span class="tag">Holiday Classes</span>
           <ul class="list">
-            <li>Exam rehearsal under timed conditions</li>
-            <li>Marker‑style feedback aligned to rubrics</li>
+            <li>Summer intensives available</li>
           </ul>
         </div>
       </div>
@@ -153,66 +152,56 @@
 
   <section id="pricing">
     <div class="container">
-      <h2>Simple pricing</h2>
+      <h2>Simple, affordable pricing</h2>
       <div class="pricing">
         <div class="price">
-          <h3>1‑to‑1</h3>
-          <div class="amt">$70<span style="font-size:16px">/hr</span></div>
-          <small>Online or Quakers Hill</small>
-          <ul class="list">
-            <li>Weekly lesson + homework</li>
-            <li>Progress tracker</li>
-          </ul>
-        </div>
-        <div class="price">
-          <h3>Paired</h3>
+          <h3>HSC (Years 11–12) 1‑to‑1</h3>
           <div class="amt">$50<span style="font-size:16px">/hr</span></div>
-          <small>Per student (2 students)</small>
+          <small>Maximum rate • Online or Quakers Hill</small>
           <ul class="list">
-            <li>Shared syllabus focus</li>
-            <li>Exam prep packs</li>
+            <li>Targeted syllabus coverage</li>
+            <li>Weekly homework & feedback</li>
           </ul>
         </div>
         <div class="price">
-          <h3>Intensive</h3>
-          <div class="amt">$95<span style="font-size:16px">/hr</span></div>
-          <small>Short‑term sprint (4–6 weeks)</small>
+          <h3>Years 7–10 1‑to‑1</h3>
+          <div class="amt">$40<span style="font-size:16px">/hr</span></div>
+          <small>Affordable rate for younger students</small>
           <ul class="list">
-            <li>Target a topic or assessment</li>
-            <li>Turnaround feedback in 24h</li>
+            <li>Strong foundations & study skills</li>
+            <li>Progress tracker shared with parents</li>
+          </ul>
+        </div>
+        <div class="price">
+          <h3>Small Group (2–4 students)</h3>
+          <div class="amt">$25–35<span style="font-size:16px">/hr</span></div>
+          <small>Per student • Same topic/level</small>
+          <ul class="list">
+            <li>Paired (1:2) — $35/hr per student</li>
+            <li>3–4 students — $25/hr per student</li>
           </ul>
         </div>
       </div>
-      <p style="color:var(--muted);margin-top:8px">School partnerships and small‑group classes on request.</p>
+      <p style="color:var(--muted);margin-top:8px">Flexible plans • No lock‑in • Family‑friendly pricing.</p>
     </div>
   </section>
 
-  <section id="testimonials">
-    <div class="container testis">
-      <h2>Results & testimonials</h2>
-      <div class="t-track">
-        <div class="card t"><p>“Clear explanations and weekly checkpoints helped our son lift from a Band 4 to Band 6 in Advanced Maths.”</p><div class="who">Parent of Year 12 student • Quakers Hill</div></div>
-        <div class="card t"><p>“The feedback on my English essays was so specific I knew exactly how to fix them. My trial mark jumped 17%.”</p><div class="who">Year 12 student</div></div>
-        <div class="card t"><p>“Chemistry depth study made sense for the first time — the data tables and uncertainty method were a lifesaver.”</p><div class="who">Year 11 student</div></div>
-      </div>
-      <p style="color:var(--muted);font-size:13px;margin-top:6px">Replace these with your own testimonials and attributions.</p>
-    </div>
-  </section>
+  
 
   <section id="about">
     <div class="container">
       <h2>About your tutor</h2>
       <div class="grid cols-2">
-        <div class="card"><p>UNSW Biotechnology student with strong IT background; years of experience tutoring Years 7–12 and university bridging. Sessions are practical, exam‑aligned and paced to the student. We track progress and build habits that stick.</p>
-          <div class="pill" style="margin-top:10px">Working With Children Check • ABN provided</div>
+        <div class="card"><p>Completed NSW HSC with Advanced English and Advanced Mathematics; currently studying Biotechnology at the University of New South Wales. Up‑to‑date with the current syllabus. Working With Children Check. Based in Quakers Hill, NSW.</p>
+          <div class="pill" style="margin-top:10px">Working With Children Check • Quakers Hill</div>
         </div>
         <div class="card">
           <h3 style="margin-top:0">How sessions work</h3>
           <ul class="list">
-            <li>5‑min warm‑up & goal review</li>
-            <li>Core concept + worked examples</li>
-            <li>Student practice with feedback</li>
-            <li>Homework + next steps</li>
+            <li>1:1 or small groups (1:2, 3–4)</li>
+            <li>Warm‑up & goal review → core concept → practice</li>
+            <li>Homework with 24/7 text support</li>
+            <li>Measured progress, shared with parents</li>
           </ul>
         </div>
       </div>
@@ -223,7 +212,7 @@
     <div class="container contact">
       <div class="card">
         <h2>Contact</h2>
-        <p style="color:var(--muted)">Email <a href="mailto:nadishchadha@gmail.com">nadishchadha@gmail.com</a> or send a message below. For quicker setup, include your year/subjects and preferred times.</p>
+        <p style="color:var(--muted)">Call or email anytime for a free 15‑minute consult.</p>
         <!-- Replace action with your Formspree endpoint or Netlify form -->
         <form action="https://formspree.io/f/your-id" method="POST">
           <input name="name" placeholder="Your name" required>
@@ -234,12 +223,13 @@
         </form>
       </div>
       <div class="card">
-        <h3 style="margin-top:0">Where</h3>
-        <p>Online Australia‑wide • In person around Quakers Hill, NSW</p>
+        <h3 style="margin-top:0">Contact</h3>
+        <p><strong>Phone:</strong> <a href="tel:+61413091559">+61&nbsp;413&nbsp;091&nbsp;559</a><br>
+        <strong>Email:</strong> <a href="mailto:nadishchadha@gmail.com">nadishchadha@gmail.com</a></p>
         <h3>Availability</h3>
         <p>Weekdays 3:30–7:30pm • Saturdays by appointment</p>
-        <h3>Direct booking</h3>
-        <p><a class="btn" href="mailto:nadishchadha@gmail.com">nadishchadha@gmail.com</a></p>
+        <h3>Location</h3>
+        <p>Online Australia‑wide • In person around Quakers Hill, NSW</p>
       </div>
     </div>
   </section>
